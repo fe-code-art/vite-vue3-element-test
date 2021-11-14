@@ -1,16 +1,13 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
-import {useCount} from "../hooks/mathTest"
+import { ref, onMounted } from "vue";
+import { useCount } from "../hooks/mathTest";
 
-defineProps<{ msg: string }>()
-const {count, countAddHandle} = useCount()
+defineProps<{ msg: string }>();
+const { count, countAddHandle } = useCount();
 
-
-onMounted(()=>{
-  console.log("")
-})
-
-
+onMounted(() => {
+  console.log("");
+});
 </script>
 
 <template>

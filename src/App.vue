@@ -8,6 +8,10 @@ import HelloWorld from "./components/HelloWorld.vue";
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
   <el-button type="primary">Primary</el-button>
+  <div class="slider-demo-block">
+    <span class="demonstration">Default value</span>
+    <el-slider v-model="value1"></el-slider>
+  </div>
 </template>
 
 <style>
