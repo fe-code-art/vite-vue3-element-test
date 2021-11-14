@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
-import { useCount } from "../hooks/mathTest";
+import { ref, onMounted } from 'vue';
+import { useCount } from '../hooks/mathTest';
 
 defineProps<{ msg: string }>();
 const { count, countAddHandle } = useCount();
 
 onMounted(() => {
-  console.log("");
+  console.log('');
 });
 </script>
 
@@ -21,11 +21,8 @@ onMounted(() => {
   </p>
 
   <p>See <code>README.md</code> for more information.</p>
-
   <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">
-      Vite Docs
-    </a>
+    <a href="https://vitejs.dev/guide/features.html" target="_blank"> Vite Docs </a>
     |
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
   </p>
@@ -36,7 +33,7 @@ onMounted(() => {
   </p>
 </template>
 
-<style scoped>
+<style lang="less" scoped>
 a {
   color: #42b983;
 }
