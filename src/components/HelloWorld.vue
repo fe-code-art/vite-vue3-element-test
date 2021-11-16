@@ -11,29 +11,17 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
-
-  <p>
-    Recommended IDE setup:
-    <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
-    +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-  </p>
-
-  <p>See <code>README.md</code> for more information.</p>
-
-  <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">
-      Vite Docs
-    </a>
-    |
-    <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
-  </p>
-  <el-button @click="countAddHandle">count is: {{ count }}</el-button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+  <el-pagination
+    v-model:currentPage="currentPage4"
+    :page-sizes="[100, 200, 300, 400]"
+    :page-size="100"
+    layout="total, sizes, prev, pager, next, jumper"
+    :total="400"
+    @size-change="handleSizeChange"
+    @current-change="handleCurrentChange"
+  >
+  </el-pagination>
+  <h1>hello {{ msg }}</h1>
 </template>
 
 <style scoped>
