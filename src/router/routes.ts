@@ -1,15 +1,9 @@
 const routes = [
   {
-    path: '/home',
-    name: 'home',
-    title: '首页',
-    component: () => import('@/components/Home.vue'),
-  },
-  {
-    path: '/news',
-    name: 'news',
-    title: '新闻',
-    component: () => import('@/components/News.vue'),
+    path: '/login',
+    name: 'login',
+    title: '登录',
+    component: () => import('@/views/Login.vue'),
   },
 ];
 
